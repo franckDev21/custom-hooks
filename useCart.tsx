@@ -8,7 +8,7 @@ const useCart = () => {
   const addToCart = (offre: Offre) => {
     let exist = carts.find((cart) => cart.id === offre.id) ? true : false;
     
-    if (!exist) { // test
+    if (!exist) {
       let newCarts = [...carts, offre];
       setCarts(newCarts);
     }
