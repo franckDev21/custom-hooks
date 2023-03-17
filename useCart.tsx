@@ -3,7 +3,7 @@ import CartContext from "../context/CartContext";
 import Offre from "../models/Offre";
 
 const useCart = () => {
-  const { carts, setCarts } = useContext(CartContext);
+  const { carts, setCarts } = useContext(CartContext); // store cart
 
   const addToCart = (offre: Offre) => {
     let exist = carts.find((cart) => cart.id === offre.id) ? true : false;
