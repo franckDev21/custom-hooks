@@ -43,7 +43,7 @@ const useUploadeImage = (defaultImage?: string, module?: MODULE) => {
       }
       
     } else {
-      toast.error('Vous devez choisir une image')
+      toast.warning('Vous devez choisir une image')
     }
   };
 
